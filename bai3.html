@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh; 
+        }
+        .container {
+            width: 185px;
+            height: 188px;
+            background-color: #F2994A;
+            position: relative;
+            margin-top: 50px;   
+        }
+        .circle {
+            width: 77px; 
+            height: 77px;  
+            border-radius: 50%; 
+            position: absolute;
+        }
+        
+        .circle1 {
+            top: 0; 
+            left: 0; 
+            background-color: #EB5757;
+        }
+
+        .circle2 {
+            top: 0; 
+            right: 0;
+            background-color: #9B51E0; 
+        }
+
+        .circle3 {
+            bottom: 0; 
+            left: 0;
+            background-color: #9B51E0;  
+        }
+
+        .circle4 {
+            bottom: 0; 
+            right: 0; 
+            background-color: #EB5757;
+        }
+
+        .circle5 {
+            width: 77px; 
+            height: 77px; 
+            background-color: #219653; 
+            border-radius: 50%; 
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        .login {
+            width: 593.95px;
+            height: 987.13px;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0px 0px 62.74px 0px #0000000f;
+            position: relative;
+            padding: 40px 38px;
+        }
+
+        .login-title {
+            font-size: 38px;
+            font-weight: 600;
+        }
+
+        .close {
+            position: absolute;
+            top: 26px;
+            right: 26px;
+            width: 45px;
+            height: 45px;
+        }
+
+        .close img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .google {
+            margin-top: 40px;
+            width: 596.57px;
+            height: 65px;
+            background-color: white;
+            border: 3.14px solid #0000000d;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        .google-ic {
+            width: 22px;
+            height: 22px;
+        }
+
+        .google-ic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .google-text {
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            color: #000000cc;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background: #0000000d;
+            margin: 42px 0;
+        }
+
+        .form-control {
+            margin-bottom: 28px;
+
+        }
+
+        .form-control label {
+            font-size: 26px;
+            font-weight: 600;
+            color: #000000b2;
+        }
+
+        .form-control input {
+            width: 100%;
+            height: 65px;
+            margin-top: 16px;
+            border: 3.14px solid #0000000d;
+            border-radius: 10px;
+            padding-left: 22px;
+            font-size: 26px;
+            width:566px;
+        }
+
+        .form-control input::placeholder {
+            font-weight: 500;
+            color: #00000059;
+            width:516px;
+        }
+
+        .form-control input[type="password"] {
+            position: relative;
+            padding-right: 50px;
+            width:516px;
+        }
+
+        .show-pass-btn {
+            position: absolute;
+            width: 35px;
+            height: 23px;
+            top: 50%;
+            transform: translateY(-25%);
+            right: 68px;
+            cursor: pointer;
+        }
+
+        .show-pass-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .remenber-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 42px 0;
+        }
+
+        .remenber-checkbox label {
+            font-size: 26px;
+            font-weight: 600;
+            color: #00000066;
+        }
+
+        .remenber-checkbox input {
+            width: 32px;
+            height: 32px;
+            background: #0185fe;
+        
+        }
+
+        .form-submit-btn {
+            width: 596.57px;
+            height: 65px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background: #0085ff;
+            font-size: 25px;
+            color: #fffffff2;
+            letter-spacing: 1.2px;
+
+        }
+
+        .forgot-pass-btn {
+            margin: 42px 0;
+            display: block;
+            text-align: center;
+            font-size: 27px;
+            font-weight: 600;
+            color: #0085ff;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            font-size: 27.19px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 18px ;
+            
+        }
+
+        .signup-link-text {
+            color: #00000066;
+        }
+
+        .signup-link-btn {
+            color: #0085ffcc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <span class="close">
+            <img src="image/close.png" alt="Close">
+        </span>
+        <h2 class="login-title">Log in</h2>
+        <button class="google">
+            <span class="google-ic">
+                <img src="image/google.png" alt="Google">
+            </span>
+            <span class="google-text">Log in with Google</span>
+        </button>
+        <div class="line"></div>
+        <form class="login-form">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="leslie@pixsellz.io" required>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="********" required>
+                <span class="show-pass-btn">
+                    <img src="image/eye.png" alt="Show Password">
+                </span>
+            </div>
+            <div class="remenber-checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="form-submit-btn">Log in</button>
+        </form>
+       
+        <a href="#" class="forgot-pass-btn">Forgot Password?</a>
+        <div class="line"></div>
+        <p class="signup-link">
+            Don´t have an account? 
+            <br><a href="#" class="signup-link-btn">Sign up</a>
+        </p>
+    </div>
+</body>
+</html>

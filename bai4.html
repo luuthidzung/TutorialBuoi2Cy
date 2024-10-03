@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Arrangement</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh; 
+            background-color: #eaeaea; 
+        }
+        .container {
+            width: 242px;
+            height: 242px;
+            border-radius: 50%;
+            background-color: #4ab2f2; 
+            position: relative;  
+        }
+        .circle {
+            width: 90px; 
+            height: 90px;
+            border-radius: 50%;
+            position: absolute; 
+        }
+        .circle1 {
+            background-color: green; 
+            top: 40%; 
+            left: 32%; 
+            transform: translate(-50%, -50%); 
+        }
+        .circle2 {
+            background-color: orange; 
+            top: 40%; 
+            right: -6.5%;
+            transform: translate(-50%, -50%); 
+        }
+        .circle3 {
+            background-color: red; 
+            top: 73%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+   @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+   @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdada;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card {
+    width: 1340px;
+    border: 2px solid #D0DDEE;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 200px;
+    border-radius: 44px;
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 586px;
+    height: 694px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.name-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 213px;
+    height: 52px; 
+}
+
+.name {
+position: absolute;
+height: 52px;
+margin-left: 38px;
+top: calc(50% - 52px/2 - 321px);
+font-family: 'Rubik';
+font-style: italic;
+font-weight: 700;
+font-size: 44px;
+line-height: 52px;
+color: #8CC5F9;
+
+}
+
+.close-btn img{
+position: absolute;
+width: 43px;
+height: 43px;
+margin-right: 24px;
+left: 1240px;
+margin-top: -24px;   
+}
+
+.description {
+position: absolute;
+width: 552px;
+height: 299px;
+left: 694px;
+top: 126px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #000000;
+
+
+}
+.social-icons {
+    display: flex;
+    margin-left: 15px;
+   
+}
+.icon {
+    width: 40px;  
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-top: 400px;
+     }
+.quote {  
+   position: absolute;
+   width: 552px;
+   height: 129px;
+   left: 694px;
+   top: 597px;
+   font-family: 'Rubik';
+   font-style: italic;
+   font-weight: 300;
+   font-size: 32px;
+   line-height: 38px;
+   color: #878ABC;
+}
+
+ </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="card-header">
+            <img src="image/profile.png" alt="Profile Image" class="profile-image">
+            <div class="card-info">
+                <div class="name-close">
+                    <h2 class="name">Rot Mitt</h2>
+                    <span class="close-btn">
+                        <img src="image/x.png" alt="Close" /></span>
+                </div>
+                <p class="description">
+                    Consequuntur est accusantium et nemo. Similique quo atque ut eligendi aspernatur modi ut nemo dolorem. 
+                   <br><br> Quod suscipit et sapiente et explicabo itaque molestiae laudantium architecto.
+                </p>
+                <div class="social-icons">
+                    <div class="social-icons">
+                        <img src="image/mail.png" alt="Facebook" class="icon">
+                        <img src="image/insta.png" alt="Twitter" class="icon">
+                        <img src="image/in.png" alt="LinkedIn" class="icon">
+                    </div>
+                    
+                </div>
+                <p class="quote">"Consequuntur est accusantium et nemo. Similique quo atque ut eligendi"</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
